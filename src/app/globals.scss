@@ -1,0 +1,25 @@
+@import "./reset.css"; 
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    width: 100vw;
+    margin: 0;
+    overflow-x: hidden;
+}
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+a {
+    text-decoration: none;
+}
+ul, li {
+    list-style: none;
+}
