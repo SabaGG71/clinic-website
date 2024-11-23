@@ -1,9 +1,46 @@
+$primary: #0032ff;
+$white: #fff;
+@font-face {
+    font-family: "Firago SB";
+    src: url("../../fonts/FiraGO-SemiBold.ttf");
+}
 .btn {
-    color: #F8F9FE;
-    background-color: #70A7FA;
-    border: none;
-    padding: 10px 8px;
-    font-size: 18px;
-    font-weight: 500;
-    border-radius: 10px;
+    position: relative;
+    font-family: "Firago SB";
+    color: $white;
+    background-color: $primary;
+    font-feature-settings: "case" on;
+    border: none; 
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    transition: all .3s ease-in;
+    cursor: pointer;
+    border-radius: 7rem;
+} 
+.btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    transform: scale(1.04);
+}
+@media (max-width: 1335px) {
+    .btn { 
+        padding: 1rem 1.1rem;
+    }
+}
+@media (max-width: 1125px) {
+    .btn { 
+        font-size: .91rem; 
+    }
+}
+@media (max-width: 1084px) {
+    .btn { 
+        font-size: 1.1rem; 
+        padding: 1rem 3.2rem;
+        
+    }
+}
+@media (max-width: 768px) {
+    .btn { 
+        font-size: 1rem; 
+        padding: .8rem 2.2rem;        
+    }
 }

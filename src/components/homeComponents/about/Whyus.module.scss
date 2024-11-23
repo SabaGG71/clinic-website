@@ -1,0 +1,202 @@
+$primary: #0032ff;
+$secondary: #ff9900;
+$light: #fff;
+$dark: #000;
+$sec-dark: #545454;
+@font-face {
+    font-family: "Fira Go B";
+    src: url("../../../fonts/FiraGO-Bold.ttf");
+}
+.textUpper {
+    font-feature-settings: "case" on;
+}
+.wrapper {
+    position: relative;
+} 
+.wrapperTop {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 88%; 
+    margin: 0 auto;
+    align-items: start;
+    grid-gap: 6rem; 
+    margin-top: 15rem;
+    margin-bottom: 4rem;
+}  
+.wrapperRight1 {
+    position: sticky;
+    top: 12rem;
+    transition: all .4s ease-in-out;
+}
+.wrapperRight2 {
+    display: none;
+    position: sticky;
+    top: 12rem;
+    transition: all .4s ease-in-out;
+}
+.wrapperRight3 {
+    display: none;
+    position: sticky;
+    top: 12rem;
+    transition: all .4s ease-in-out;
+}
+.wrappershow2 {
+    opacity: 1;
+}
+.wrappershow3 {
+    opacity: 1;
+}
+.wrapperLeft {
+    border-radius: 1rem 0;
+    background-color: #00114708;
+    padding: 1rem 2rem; 
+}
+.wrapperMainText {
+    font-size: 3rem;  
+    color: #000000;
+    font-family: "Fira Go B";
+} 
+.wrapperTextRight {
+    color: #2d2f35;
+    font-size: 1.3rem;
+    margin: 2rem 0 3rem 0;
+    line-height: 1.6;
+}
+.wrapperLeftBox {
+    cursor: pointer;
+    background: transparent;
+    display: flex; 
+    gap: 1.5rem;
+    border: 1px solid #55555529;
+    border-radius: 16px 0;
+    margin: 2rem;  
+    transition: all .3s ease-in;
+    padding: 3rem 2rem 3rem 2rem; 
+} 
+.underlinedWrapper {
+    border-bottom: 1px solid #ced0d5; 
+    margin-bottom: 1rem;
+}
+.backgroundWrapper {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    border-bottom: 1px solid #ced0d5;
+    padding-bottom: 2.5rem; 
+    background-color: #fff; 
+    border-radius: 16px 0;
+    padding-bottom: 3rem;
+}   
+.wrapperLeftBox:hover {
+    padding: 3rem 2rem 3rem 2rem;
+    border-radius: 16px 0;
+    transform: scale(1.04);
+    background-color: #ffffff13;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px !important;  
+}
+.wrapperTitle {
+    font-size: 1.8rem;
+}
+.wrapperText { 
+    margin-top: 1rem;
+    color: #2d2f35;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+.wrapperBtn {
+    background-color: #0032ff;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    box-shadow: rgba(0, 51, 255, 0.2862745098) 0px 22px 70px 4px;
+    border: none;
+    margin-top: 2rem;
+    transition: all 0.3s ease-in;
+}
+.wrapperBtn:hover {
+    opacity: .9;
+    transform: scale(1.04);
+}
+.heartIcon {  
+    background-color: #0032ff;
+    padding: 0.8rem;
+    border-radius: 16px 0;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+@media (max-width: 1370px) {
+    .wrapperLeftBox {
+        margin: 1rem;
+    }
+    .wrapperMainText{
+        font-size: 2.6rem;
+    }
+    .wrapperTitle {
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 1250px) {
+    .wrapperText {
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 1160px) {
+    .wrapperMainText {
+        font-size: 2.3rem;
+    }
+    .wrapperTop {
+        grid-gap: 3rem;
+    }
+}
+@media (max-width: 1100px) {
+    .heartIcon {
+        padding: .4rem;
+        width: 50px;
+    }
+    .wrapperTop {
+        grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    }
+    .wrapperRight {
+        margin: 4rem 0 4rem 0;
+    }
+}
+@media (max-width: 992px) {
+    .wrapperTop {
+        margin-top: 9rem;
+    }
+}
+@media (max-width: 650px) {
+    .wrapperTop {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .wrapperTitle {
+        font-size: 1.3rem;
+    }
+    .wrapperMainText {
+        font-size: 1.8rem;
+    }
+    .wrapperTextRight {
+        font-size: 1.1rem;
+    } 
+    .wrapperBtn {
+        font-size: 1.1rem;
+        padding: 0.8rem 1.1rem;
+    }
+    .wrapperLeftBox {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+}
+@media (max-width: 360px) {
+    .wrapperMainText {
+        font-size: 1.7rem;
+    }
+}
+@media (max-width: 295px) {
+    .wrapperMainText {
+        font-size: 1.4rem;
+    }
+    .wrapperTop {
+        grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+    }
+}

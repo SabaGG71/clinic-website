@@ -1,4 +1,527 @@
-$primary: #70A7FA;
-$secondary: #FFC567;
-$bg-light: #F8F9FE;
+$primary: #0032ff;
+$secondary: #ff9900;
+$light: #fff;
 $dark: #000;
+$sec-dark: #545454;
+@font-face {
+    font-family: "FiraGo B";
+    src: url("../../fonts/FiraGO-Bold.ttf");
+}
+.header {
+    z-index: 9999999;
+    position: fixed;
+    width: 100%;
+    padding: 2rem 0;
+    transition: all .2s ease-in;
+}
+// drop-down 
+.serviceLi {   
+    position: relative;
+    margin-right: 2.5rem !important;
+  } 
+  .DropDownImg {
+    margin-right: 2.2rem;
+  }
+  .cuteTeeth {
+    width: 18%;
+    height: auto;
+  }
+  .serviceDiv {
+    transition: all .3s ease-in;
+    animation: bounce 1s infinite alternate;
+    animation-iteration-count: 1;
+    // padding-top: 2.9rem;
+    margin-top: 3rem;
+    max-height: fit-content;
+
+    background-color: $light; 
+    position: absolute;
+    width: 34%;
+    padding: 1rem 1rem 1rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    border-radius: 16px;
+  }
+  @keyframes bounce {
+    0% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+  }
+  .serviceDivTop { 
+    justify-content: center; 
+  }
+  .childFlexDrop {
+    display: flex;
+    gap: .5rem;
+  }
+  .secondChildFlexDrop {
+    margin-top: .5rem;
+  }
+  .serviceDivBox {
+    display: flex;
+    align-items: center; 
+    padding: .8rem;
+    cursor: pointer;
+    background-color: #eef1ff;
+    border-radius: 12px;
+    transition: all .2s ease-in;
+  }
+  .serviceDivBox:hover {
+    background-color: #3b5fff;
+    padding: .8rem;
+    color: $light;
+    border-radius: 12px;
+  }
+  .serviceDivBox:hover > .dropdownText {
+    color: $light;
+    font-family: "FiraGo B";
+  }
+  .dropdownTextAll { 
+    position: relative; 
+    font-family: "FiraGo B";
+    left: 50%;
+    bottom: -.5rem; 
+    font-feature-settings: "case" on;
+    font-size: 1.15rem; 
+    color: $light;
+    transform: translate(-50%, -50%);
+  } 
+  .serviceDivBoxAll {
+    border-radius: 16px;
+    margin-top: 1rem;
+    background-color: $primary;
+    padding: 1rem; 
+    transition: all .2s ease-in;
+  } 
+  .chevronRight {
+    margin-left: .4rem;
+    margin-top: .8rem !important; 
+  }
+  .serviceDivBoxAll:hover {
+    padding: 1rem;
+    background-color: #3b5fff;
+  }
+  .dropdownText {
+    color: $sec-dark;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin-left: 1.3rem;
+    // font-feature-settings: "case" on;
+  }
+  @media (max-width: 1380px) {
+    .serviceDiv {
+        width: 40%;
+    }
+  }
+  @media (max-width: 1084px) {
+    .servicesDrop {
+        display: none !important;
+    } 
+  }
+//   end dropdown
+.headerBack {
+    transition: all .2s ease-in;
+    position: fixed;
+    width: 100%;
+    padding: 0;
+    z-index: 9999999;
+}
+.mainContainer {
+    z-index: 999999;
+    position: relative;
+    background-color: $primary;
+    padding: 1.2rem;
+    font-size: 1.1rem;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.preHeaderFlex {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+} 
+.topContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 88%;
+    margin: 0 auto;
+    color: $light;
+}
+.preHeaderText {
+    font-size: 1.3rem;
+    color: $light;
+}
+.leftContainer {
+    display: flex;
+} 
+.itemTextFlex {
+    margin-right: 1.5rem;
+}
+.itemTextMargin {
+    border-left: 2px solid #fff6;
+    padding: 0 1.55rem;
+}
+// nav
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 88%;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    box-shadow: rgba(39, 39, 50, 0.034) 0px 0px 0px, rgba(37, 37, 49, 0.057) 0px 6px 21px, rgba(17, 17, 26, 0.053) 0px 16px 48px;
+    border-radius: 50px;
+    transition: all 0.1s cubic-bezier(0.79, -0.52, 0.22, 1.26);
+    background-color: $light;
+}
+.navBack {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%; 
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    box-shadow: rgba(39, 39, 50, 0.034) 0px 0px 0px, rgba(37, 37, 49, 0.057) 0px 6px 21px, rgba(17, 17, 26, 0.053) 0px 16px 48px;
+    border-radius: 50px;
+    background-color: #fff;
+    margin-top: -2rem; 
+    transition: all 0.1s cubic-bezier(0.79, -0.52, 0.22, 1.26);
+}
+.navLeft {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.logoText {
+    font-size: 1.7rem;
+    font-family: "FiraGo B";
+}
+.logo {
+    width: 40px; 
+    height: 42px;
+}
+.middleNav, .rightNav {
+    display: none;
+}
+.middleNavComp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}   
+.serviceFlex {
+    display: flex;
+    align-items: center;
+}
+.parentImg {
+    position: absolute;
+    right: -15%;
+}
+.serviceDropDown {
+    display: flex;
+    cursor: pointer; 
+    overflow: hidden;
+    margin-right: 2.2rem;
+    position: relative;
+    align-items: center;
+}
+.aLink {
+    color: $sec-dark;
+    margin-right: 2.5rem;
+    position: relative;
+    transition: all .3s ease-in;
+}
+.aLink:hover {
+    color: $primary;
+}
+.servicesDrop {
+    font-size: 12px;
+}
+.rightNavComp {
+    display: flex;
+    align-items: center;
+}
+.telNumber {
+    font-family: "FiraGo B";
+    margin-right: 1.5rem;
+    font-size: 1.1rem;
+}
+.parentTooth, .badTooth, .tooth {
+    display: none;
+} 
+.servicesDrop {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+}
+@media (max-width: 1440px) {
+   .nav {
+    max-width: 96%;
+   } 
+   .topContainer {
+     max-width: 96%;
+   }
+   .navBack {
+    max-width: 95%;
+   }
+}
+@media (max-width: 1335px) {
+   .aLink {
+    font-size: .95rem;
+   }
+   .telNumber {
+    font-size: .95rem;
+   }
+   .navBack {
+    max-width: 95%;
+   }
+}
+@media (max-width: 1230px) {
+   .aLink {
+    margin-right: 1.7rem;
+   } 
+}
+@media (max-width: 1125px) {
+   .aLink {
+    margin-right: 1.5rem;
+    font-size: .91rem;
+   } 
+   .telNumber {
+    font-size: .91rem;
+   }
+}
+@media (max-width: 1105px) {
+  .middleNavComp {
+    margin-left: 5rem;
+    border-right: 1px solid #6f6f6f6e;
+  }
+  .logoText {
+    font-size: 1.3rem;
+  }
+  .logo {
+    width: 38px;
+    height: 40px;
+  }
+}
+@media (max-width: 1084px) {
+    .nav {
+        max-width: 93%;
+    }
+    .middleNavComp, .rightNavComp {
+        display: none;
+    } 
+    .middleNav { 
+        margin-left: 0rem;
+        border: none;
+        margin-right: 1.1rem;
+        margin: 0 !important;
+        display: flex;
+        flex-direction: column;
+    }
+    .parentNav {
+        display: none;
+    }
+    .parentNavActive {
+        position: absolute;
+        z-index: 999;
+        width: 65%;
+        margin-top: 1rem;
+        background: $light;
+        text-align: center;
+        display: flex;  
+        top: 238%;
+        left: 58%;
+        padding: 4rem 0;
+        box-shadow: rgba(39, 39, 50, 0.034) 0px 0px 0px, rgba(37, 37, 49, 0.057) 0px 6px 21px, rgba(17, 17, 26, 0.053) 0px 16px 48px;
+        transform: translate(-50%, -50%);
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+    .parentNavHeaderBack {
+        margin-top: 10.5rem;
+        position: absolute;
+        z-index: 999;
+        width: 65%;
+        background: $light;
+        text-align: center;
+        display: flex;  
+        top: 238%;
+        left: 58%;
+        padding: 4rem 0;
+        box-shadow: rgba(39, 39, 50, 0.034) 0px 0px 0px, rgba(37, 37, 49, 0.057) 0px 6px 21px, rgba(17, 17, 26, 0.053) 0px 16px 48px;
+        transform: translate(-50%, -50%);
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+    .parentNavHeaderBack ul li {
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+    }
+    .aLink {
+        font-size: 1.2rem;
+    }
+    .telNumber {
+        margin: 1.5rem 0 1.2rem 0;
+        font-size: 1.3rem;
+    }
+    .parentNavActive li {
+        margin-right: -1.2rem; 
+        padding: .6rem;
+    }
+    .rightNav {
+        display: block;
+        flex-direction: column;
+    }
+    .mobileMenu {
+        display: block;
+        opacity: 1;
+    }
+    .preHeaderText {
+        font-size: 1.1rem;
+    }
+    .itemText {
+        font-size: .95rem;
+    }
+    .badTooth {
+        display: block; 
+        color: transparent;
+        width: 3.1rem;
+        padding: 0.5rem;
+        height: 3.1rem;
+        border-radius: 50px; 
+        cursor: pointer;
+        animation: skew-y-shakeing 1s infinite alternate;
+    } 
+    .tooth {
+        display: block;
+        color: transparent;
+        width: 3.1rem;
+        padding: 0.8rem;
+        height: 3.1rem;
+        border-radius: 0; 
+        cursor: pointer; 
+    }
+    .parentTooth {
+        display: block;
+        background-color: #e4e4e4;
+        border-radius: 50px;
+    }
+    .parentTooth:hover {
+        background-color: #b1c1ff;
+    }
+    .parentNavActive {
+        animation: bounce .5s infinite alternate;
+        transition: all .3s ease-in;
+        animation-iteration-count: 1;
+    }
+    @keyframes bounce { 
+        0% {
+          transform: translate(-50%, -54%);
+          opacity: 0;
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(-50%, -50%);
+        }
+    }
+    @keyframes skew-y-shakeing{
+        0% { transform: skewY(-10deg); }
+        5% { transform: skewY(10deg); }
+        10% { transform: skewY(-10deg); }
+        15% { transform: skewY(10deg); }
+        20% { transform: skewY(0deg); }
+        100% { transform: skewY(0deg); }
+       }
+}
+@media (max-width: 900px) {
+    .nav {
+        max-width: 93%;
+    }
+}
+@media (max-width: 780px) {
+    .nav {
+        max-width: 85%;
+    }
+}
+@media (max-width: 676px) {
+    .itemText {
+        font-size: .85rem;
+    }
+    .preHeaderText {
+        font-size: .95rem;
+    }
+}
+@media (max-width: 590px) {
+    .leftContainer {
+        flex-direction: column;
+    }
+    .itemText  { 
+        padding-left: 0.5rem;
+    } 
+    .itemTextMargin { 
+        margin-top: 1rem; 
+        border: none;
+    }
+} 
+@media (min-width: 770px) {
+    .parentNav {
+        margin-top: 1rem;
+    }
+}
+@media (max-width: 786px) {
+    .aLink,  .telNumber{
+        font-size: 1.1rem;
+    } 
+}
+@media (max-width: 315px) {
+    .nav {
+        max-width: 90%;
+    }
+    .parentNavActive {
+        width: 74%; 
+        top: 238%;
+        left: 56%;
+    }
+    .leftContainer {
+        margin-left: -2rem;
+    }
+    .badTooth {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .topContainer {
+        flex-direction: column;
+    }
+    .navLeft {
+        gap: 0.5rem !important;
+    }
+    .preHeaderFlex { 
+        padding-left: 1em;
+        margin-top: 1rem;
+        margin-left: -7.5rem; 
+    }
+    .whatsappIcon {
+        width: 20px;
+    }
+    .telNumber {
+        font-size: .95rem;
+    }
+    .tooth {
+        width: 2.7rem;
+        height: 2.7rem;
+    }
+}
+@media (max-width: 769px) {
+    .topContainer {
+        max-width: 85%;
+    }
+}
+@media (min-height: 1350px) {
+    .parentNav {
+        margin-top: 1rem;
+    }
+} 

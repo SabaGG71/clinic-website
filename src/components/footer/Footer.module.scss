@@ -1,0 +1,273 @@
+$primary: #0032ff;
+$secondary: #ff9900;
+$light: #fff;
+$dark: #000;
+$sec-dark: #545454;
+@font-face {
+    font-family: "Fira Go SB";
+    src: url("../../fonts/FiraGO-Bold.ttf");
+}
+.follow {
+    overflow: hidden;
+    background: #0e153a;
+}
+.footerMain {
+    display: flex;
+    width: 225%;
+    height: auto;
+    animation: slide 40s linear infinite;
+    cursor: pointer;
+}
+.followTop {  
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    min-width: 150%; 
+    overflow: hidden; 
+}
+.followTitle {
+    display: flex;
+    margin: 0 2rem;
+    border-left: 2px solid #ffffff10; 
+    border-right: 2px solid #ffffff10;
+    color: #fff;
+    font-size: 1.8rem; 
+    list-style: disc !important;
+    padding: 1rem 2rem;
+    font-family: "Fira Go SB"; 
+    font-feature-settings: "case" on; 
+    justify-content: flex-start;
+}
+.footerMain:hover {
+    animation-play-state: paused ;
+} 
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+@media (max-width: 992px) {
+    .followTop {
+        min-width: 150%;
+    }
+}
+// Footer
+.footer { 
+    background-color: #0e153a;
+    margin-top: -.4rem;
+    width: 100%;
+    justify-self: center;
+}  
+.footerMiddle {
+    display: grid;
+    justify-content: center;
+    margin-left: -2rem;
+}
+.footerRight{
+    display: grid;
+    margin-right: 1rem;
+    justify-content: center;
+}
+.footerMiddleNext {
+    margin-left: -10rem;
+    margin-top: 4rem;
+}
+.footerRightTitle {
+    color: #fff;  
+    font-family: "Fira Go SB";
+    font-size: 1.8rem;
+    font-feature-settings: "case" on;
+}
+.footerUl {
+    display: flex;
+    gap: 2rem;
+}
+.footerLeftTitle {
+    display: flex;
+    align-items: center;
+    font-family: "Fira Go SB";
+    font-size: 1.5rem;
+}
+.footerLogo { 
+        width: 60px; 
+        height: 60px;
+        background: #fff;
+    padding: 0.4rem;
+    border-radius: 50px;
+}
+.logoFooterText {
+    color: $light !important;
+    margin-left: 1.5rem;
+    font-size: 2.5rem;
+}
+.footerTop {
+    padding: 6rem 0 2rem 0;
+    max-width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 6rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));   
+    justify-content: space-around;
+} 
+.footerLeftText {
+    color: #ffffffc2;
+    line-height: 1.6;
+    font-size: 1.4rem;
+    margin: 2.5rem 0 3rem 0;
+}
+.footerImg {
+    margin-right: .8rem;
+}
+.footerImg2 {
+    margin-right: 1.2rem;
+}
+.footerMiddleTitle {
+    margin-bottom: 9rem;
+    color: #fff;
+    border-bottom: 1px solid #ffffff30;
+    font-size: 1.8rem; 
+    font-family: "Fira Go SB";
+    font-feature-settings: "case" on;  
+}
+.footerUl {
+    margin-top: -4.5rem;
+}
+.footerLi{
+    margin-bottom: 2rem;
+}
+.footerA {
+    color: rgba(255, 255, 255, 0.7607843137);  
+    font-size: 1.4rem; 
+    transition: all .3s ease-in;
+}
+.footerA:hover {
+    text-decoration: underline;
+    color: #fff; 
+}
+.footerRightTitle {
+    margin-bottom: 2rem;
+}
+.footerLeftBtn {
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    box-shadow: #ffffff15 0px 15px 25px, #ffffff15 0px 5px 10px;
+    color: #0e153a; 
+    transition: all .3s ease-in;
+}
+.footerLeftBtn:hover {
+    transform: translateY(-7px);
+    box-shadow: #0033ff36 0px 15px 25px, #0033ff36 0px 5px 10px;
+}
+.contactRightFlex {
+    margin-top: 1rem;
+    display: flex;
+    margin-bottom: 2rem; 
+    border-top: 1px solid #ffffff30;
+    padding-top: 3rem;
+}
+.hours {
+    color: #fff; 
+    font-size: 1.6rem;  
+    margin-bottom: 1.5rem;  
+}
+.contactRightFlex2 {
+    margin-top: 3rem;
+}
+.contactRightText { 
+    font-size: 1.4rem;
+    line-height: 2;
+    margin-top: .3rem; 
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.7607843137); 
+} 
+.contactRightMenuLeft {
+    margin-left: 1.5rem;
+}
+.contactSpan { 
+    color: $light;
+    background-color: #ffffff36; 
+    padding: .5rem;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-family: "Fira Go SB";
+}
+.footerCreate {
+    background-color: $primary;
+    color: $light;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    font-size: 1.3rem;
+}
+@media (max-width: 992px) {
+    .footerLogo {
+        width: 50px;
+        height: 50px;
+    }
+    .logoFooterText {
+        font-size: 2rem;
+    }
+    .footerLeftText {
+        font-size: 1.1rem;
+        margin: 2rem 4rem 3rem 0;
+    }
+    .footerLeftBtn {
+        padding: 0.8rem 1.3rem;
+        font-size: 1.1rem;
+    }
+    .footerMiddleTitle {
+        padding-bottom: 3rem;
+    }
+    .footerCreate {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    .hours {
+        font-size: 1.4rem;
+    }
+    .contactRightFlex {
+        display: flex;
+        flex-direction: column;
+    }
+    .footerA {
+        font-size: 1.2rem;
+    }
+    .contactRightText {
+        font-size: 1.2rem;
+    }
+    .contactRightMenuLeft {
+        margin-left: 0 !important;
+        margin-top: 2rem;
+    }
+    .contactSpan {
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 295px) {
+    .footerTop {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    .footerLeftText {
+        margin: 2rem 2rem 3rem 0;
+    }
+    .footerMiddle {
+        margin-left: 0 !important;
+    }
+    .footerUl {
+        gap: 1rem;
+    }
+    .contactRightText {
+        line-height: 2.2;
+    }
+    .footerA {
+        font-size: .9rem;
+    }
+}

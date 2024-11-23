@@ -1,0 +1,453 @@
+$primary: #0032ff;
+$secondary: #ff9900;
+$light: #fff;
+$dark: #000;
+$sec-dark: #545454;
+@font-face {
+    font-family: "Fira Go SB";
+    src: url("../../fonts/FiraGO-SemiBold.ttf");
+}
+@font-face {
+    font-family: "Fira Go B";
+    src: url("../../fonts/FiraGO-Bold.ttf");
+}
+@font-face {
+    font-family: "Fira Go L";
+    src: url("../../fonts/FiraGO-Light.ttf");
+}
+.aboutMain {
+    background-color: #0e153a;
+    padding: 19rem 0 5rem 0;
+    position: relative;
+    overflow: hidden; 
+}
+.aboutFlexInfo {
+    margin-top: -10rem;
+    position: relative;
+}
+.aboutTop {
+    max-width: 88%;
+    margin: 0 auto;
+    padding-bottom: 8rem;
+}
+.aboutTitle {
+    align-items: center;
+    font-family: "Fira Go SB";
+    font-feature-settings: "case" on; 
+    color: $light; 
+    font-size: 3.6rem;
+    display: flex; 
+    color: #fff; 
+    align-items: center;
+    gap: 2rem;
+}
+.circle1 {
+    position: absolute;
+    right: -8rem;
+    bottom: -2rem;
+    background: linear-gradient(45deg, #0032ff, transparent);
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    box-shadow: rgba(0, 51, 255, 0.098) 0px -1px 31px 15px;
+}
+.circle2 {
+    position: absolute;
+    right: 14rem;
+    top: 18rem;
+    background: linear-gradient(135deg,  #0032ff, transparent);
+    width: 8rem;
+    height: 8rem;
+    box-shadow: rgba(0, 51, 255, 0.098) 0px -1px 31px 15px;
+    border-radius: 50%;
+}
+.circler {
+    opacity: 1;
+}
+.teethImage {   
+    color: transparent;
+    width: 75px;
+    height: auto;
+    background: $primary;
+    box-shadow: rgba(0, 51, 255, 0.4392156863) 0px -1px 31px 15px;
+    padding: .9rem;
+    border-radius: 32%;
+    animation: bounceIn 2s infinite alternate;
+}
+@keyframes bounceIn {
+    0% {
+        transform: scale(1);
+        opacity: .8;
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1.02);
+    }
+}
+.aboutText {
+    color: #b9c7ff;
+    font-size: 1.5rem;
+    line-height: 1.7;
+    max-width: 50%;
+    margin-top: 2rem;
+}
+// start aboutINfo
+.aboutInfo {
+    max-width: 88%;
+    margin: 0 auto 5rem auto;
+}
+.aboutInfoTop {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+    margin: 3rem 0 5rem 0;
+}
+.aboutInfoMainTitle {  
+    color: #0e153a; 
+    border-radius: 25px;
+    padding: 3rem 2rem;
+    font-size: 2rem; 
+    line-height: 1.2; 
+    font-feature-settings: "case" on;
+} 
+// .aboutSpan {
+//     color: $primary;
+// }
+.aboutInfoBox {  
+    padding: 3rem 2rem; 
+    border-radius: 30px; 
+    border: none;
+    background: linear-gradient(#f0f3ff, #f0f3ff) padding-box,
+    linear-gradient(to left, transparent, #0032ff, transparent);
+      cursor: pointer;
+      color: #0e153a;
+      transition: all .3s ease-in;
+     border: 10px solid transparent; 
+    // box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, #0032ff 0px 0px 0px 1px;
+} 
+.aboutInfoBox:hover { 
+    background: linear-gradient(#f0e2ff, #f0e2ff) padding-box,
+    linear-gradient(to left, transparent, #7700ff, transparent);
+    transition: all .3s ease-in;
+    transform: scale(1.03);
+    transform: translateY(-25px); 
+}
+.aboutInfoTitle {
+    z-index: 1111111;
+    position: relative;
+    font-size: 2.1rem;
+    font-feature-settings: "case" on;
+    font-family: "Fira Go SB";
+    margin: 1.2rem 0 2rem 0;
+}
+.aboutTitle {
+    z-index: 1111111;
+    position: relative;
+}
+.aboutInfoText {
+    line-height: 1.5;
+    font-size: 1.3rem;
+    color: #0e153a;
+}
+@media (max-width: 1250px) {
+    .aboutInfoTop {
+        grid-template-columns: repeat(auto-fit, minmax(354px, 1fr));
+        grid-gap: 2rem;
+    }
+}
+@media (max-width: 1081px) {
+    .aboutInfoTop {
+        grid-template-columns: repeat(auto-fit, minmax(432px, 1fr)); 
+    }
+    .aboutText {
+        z-index: 111;
+        max-width: 79%;
+        margin-top: 2rem;
+        position: relative;
+    }
+}
+@media (max-width: 800px) {
+    .aboutTop {
+        max-width: 80%;
+    }
+    .aboutInfoTop {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    .aboutInfoTitle{
+        font-size: 1.55rem;
+    }
+    .aboutText {
+        max-width: 89%;
+
+    }
+    .aboutTitle {
+        font-size: 3rem;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: left;
+        align-items: flex-start;
+    }
+    
+} 
+@media (max-width: 376px) {
+    .aboutText{
+        max-width: 100%;
+    }
+}
+@media (max-width: 295px) {
+    .aboutInfoTop{
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    }
+    .aboutInfoTitle {
+        font-size: 1.1rem;
+    }
+    .aboutInfoText {
+        font-size: 1rem;
+    }
+}
+// doctors 
+.aboutDoctor {
+    position: relative;
+} 
+.aboutDoctorTop {
+    max-width: 88%;
+    margin: 15rem auto 15rem auto;
+}
+.aboutSvgAbsolute { 
+    position: absolute;
+    top: -4.95rem;
+    left: -4.75rem;
+    animation: zoomLeft 1s infinite alternate;
+} 
+.spanAboutDoctor {
+    color: #5a71e4;
+}
+@keyframes zoomLeft {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.02);
+        opacity: .8;
+    }
+}
+.aboutSvg {     
+    width: 100%;
+    height: 70vh;
+    border-radius: 500px;
+    object-fit: cover;
+    filter: brightness(.9);
+}
+.aboutDoctorTop {
+    position: relative;
+}
+.aboutParentFlex { 
+    padding: 5rem 5rem 4rem 5rem;
+    border-radius: 50px;
+    text-align: centers;
+    background: linear-gradient(#0e153a, #2941bb) padding-box, linear-gradient(to left, #0313601a, #0313601a, #0313601a);
+    box-shadow:rgba(4, 34, 153, 0.271) 0px 25px, rgba(4, 34, 153, 0.271) 0px 65px; 
+    max-width: 80%;
+    margin: -19rem auto 0 auto;
+    z-index: 11;
+    display: block; 
+    position: relative; 
+    animation: bounceInFlex 1s infinite alternate;
+}
+@keyframes bounceInFlex {
+    0% {
+        box-shadow:rgba(4, 34, 153, 0.271) 0px 30px, rgba(4, 34, 153, 0.271) 0px 55px; 
+        // background: linear-gradient(#0e153a, #2941bb) padding-box, linear-gradient(to left, #5370ff, #5370ff, #5370ff);
+    } 
+    100% {
+        box-shadow:rgba(17, 48, 172, 0.271) 0px 30px, rgba(86, 114, 229, 0.271) 0px 55px; 
+        // background: linear-gradient(#0e153a, #2941bb) padding-box, linear-gradient(to left, #768dff, #768dff, #768dff);
+    }
+}
+.aboutMainTitle {
+    font-size: 2.7rem; 
+    max-width: 95%;
+    font-family: "Fira Go B";
+    color: #fff;
+    font-feature-settings: "case" on;
+}
+.aboutMainText {
+    font-size: 1.5rem;
+    max-width: 90%;
+    line-height: 1.6;
+    font-family: "Fira Go L";
+    margin: 2.5rem 0 3.5rem 0;
+    color: #ffffffd1;
+}
+.aboutMainBtn {
+    background: $light;
+    padding: 1.1rem 3rem;
+    border-radius: 50px;
+    color: #5a71e4;
+    font-feature-settings: "case" on;
+    border: none;
+    transition: all .3s ease-in;
+    font-size: 1.4rem;
+} 
+.aboutMainBtn:hover {
+    opacity: .9;
+    transform: scale(1.03);
+}
+@media (max-width: 1560px) {
+    .aboutParentFlex {
+        padding: 6rem 4rem 4rem 4rem;
+    }
+    .aboutMainTitle {
+        font-size: 2.4rem;
+    }
+    .aboutMainText {
+        font-size: 1.3rem;
+    }
+    .aboutMainBtn {
+        padding: 1rem 2.7rem;
+    }
+    .aboutSvgAbsolute {
+        left: -4.3rem;
+        width: 9rem;
+    }
+}
+@media (max-width: 1084px) {
+    .aboutMainTitle {
+        font-size: 2rem;
+        line-height: 1.34;
+    }
+    .aboutMainText {
+        font-size: 1.2rem;
+    }
+    .aboutMainBtn {
+        padding: 0.8rem 2rem;
+        font-size: 1.2rem;
+    }
+    .aboutSvgAbsolute {
+        left: -3.8rem;
+        width: 8rem;
+    }
+}
+@media (max-width: 992px) {
+    .aboutDoctorTop {
+        max-width: 95%;
+    }
+    .aboutParentFlex {
+        max-width: 90%;
+        padding: 6rem 1.5rem 4rem 1.5rem;
+    }
+    .aboutSvgAbsolute {
+        left: 2.16rem !important;
+    }
+    .aboutMainTitle {
+        max-width: 100%;
+        font-size: 2rem; 
+    }
+    .aboutMainText {
+        max-width: 96%;
+    }
+    .aboutSvg {
+        height: 80vh;
+    }
+}
+@media (max-width: 768px) { 
+    .aboutMainTitle {
+        max-width: 100%;
+        font-size: 1.6rem; 
+    } 
+    .aboutSvg {
+        height: 95vh;
+    }
+}
+@media (max-width: 568px) { 
+    .aboutSvgAbsolute {
+        left: -2.84rem;
+        width: 6rem;
+    }
+    .aboutMainTitle {  
+        font-size: 1.45rem;
+    } 
+    .aboutMainText {
+        font-size: 1rem;
+    }
+}
+@media (max-height: 415px) {
+    .aboutParentFlex {
+        margin-top: -10rem;
+    }
+}
+@media (max-width: 295px) {
+    .aboutMainTitle {
+        font-size: 1.1rem;
+    }
+    .aboutMainText {
+        max-width: 100%;
+    }
+}
+// start client
+.client {
+    max-width: 75%;
+    margin:  0 auto 16rem auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.clientTop {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    grid-gap: 5rem;
+    text-align: center;
+    justify-self: center;    
+    margin: 9rem 0;
+}
+.clientSpan {
+    color: #7700ff !important;
+}
+.peels {
+    opacity: .1;
+}
+.peels2 {
+    margin-bottom: 5rem;
+}
+.clientTitle {
+    font-size: 5rem;
+    font-feature-settings: "case" on;
+    font-family: "Fira Go B";
+    color: #0032ff;
+    margin-bottom: 2rem;
+}
+.clientMainTitle { 
+    color: #3b3b3b;
+    font-size: 1.5rem;
+    font-feature-settings: "case" on; 
+    font-family: "Fira Go SB";
+}
+.clientText {
+    margin-top: 1.5rem;
+    font-family: "Fira Go L";
+    color: #4f4f4f;
+    line-height: 1.54;
+    font-size: 1.3rem;
+}
+@media (max-width: 992px) {
+    .clientTop {
+        grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+    }
+    .peels {
+        width: 100%;
+    }
+    .clientTitle {
+        font-size: 3rem;
+    }
+}
+@media (max-width: 295px) {
+    .clientTop {
+        grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+    }
+    .clientText {
+        font-size: 1.1rem;
+    }
+}

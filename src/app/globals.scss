@@ -1,3 +1,8 @@
+$primary: #0032ff;
+$secondary: #ff9900;
+$light: #fff;
+$dark: #000;
+$sec-dark: #545454;
 @import "./reset.css"; 
 *,
 *::before,
@@ -6,16 +11,29 @@
     margin: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: "Fira Go SB";
+    src: url("../fonts/FiraGO-SemiBold.ttf");
+}
+@font-face {
+    font-family: "Fira Go R";
+    src: url("../fonts/FiraGO-Regular.ttf");
+}
 html {
     width: 100vw;
     margin: 0;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
-body {
-    overflow-x: hidden;
+::selection {
+    background-color: $primary;
+    color: $secondary;
+}
+body {  
     margin: 0;
     padding: 0;
     width: 100%;
+    background-color: #F8F9FE;
 }
 a {
     text-decoration: none;
@@ -23,3 +41,29 @@ a {
 ul, li {
     list-style: none;
 }
+button, input {
+    font-family: "Fira Go SB";
+}
+button {
+    cursor: pointer;
+}
+html::-webkit-scrollbar {
+    width: .75rem;
+  }
+  html::-webkit-scrollbar-thumb {
+    background-color: #2b2b2b; 
+  }
+  html::-webkit-scrollbar-thumb:hover {
+    background-color: $primary;
+  }
+  html::-webkit-scrollbar-track { 
+    background-color: #000; 
+  }
+  input {
+    font-family: "Fira Go R"; 
+    color: #fff;
+  }
+  ::placeholder {
+    color: #fff;
+    opacity: 1; 
+  }

@@ -1,0 +1,621 @@
+@font-face {
+    font-family: "Fira Go SB";
+    src: url("../../fonts/FiraGO-Bold.ttf");
+}
+@font-face {
+    font-family: "Fira Go";
+    src: url("../../fonts/FiraGO-Regular.ttf");
+} 
+.mainContact {
+    background-color: #031e71;
+    padding: 19rem 0 5rem 0;
+    position: relative;
+    overflow: hidden; 
+}
+.contact {  
+    position: relative;
+}
+.contactTop {
+    max-width: 88%;
+    margin: 0 auto;
+    padding-bottom: 8rem;
+}
+.contactText {
+    color: #f9e7ff;
+    font-size: 1.5rem;
+    line-height: 1.7;
+    max-width: 50%;
+    margin-top: 2rem;
+}
+.contactTitle {
+    align-items: center;
+    font-family: "Fira Go SB";
+    font-feature-settings: "case" on;  
+    font-size: 3.6rem;
+    display: flex; 
+    color: #fff; 
+    align-items: center;
+    gap: 2rem;
+}
+.circle1 {
+    position: absolute;
+    right: -8rem;
+    bottom: -10rem;
+    background: linear-gradient(45deg, #769bff, transparent);
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10%;
+    box-shadow: #44d9e611 0px -1px 31px 15px;
+}
+.circle2 {
+    position: absolute;
+    right: 16rem;
+    top: 1rem;
+    background: linear-gradient(135deg,  #769bff, transparent);
+    width: 8rem;
+    height: 8rem;
+    box-shadow: #44d9e611 0px -1px 31px 15px;
+    border-radius: 10%;
+} 
+.circle3 {
+    position: absolute;
+    right: 9.2rem;
+    top: 0rem;
+    background: linear-gradient(135deg,  #769bff, transparent);
+    width: 5rem;
+    height: 5rem;
+    box-shadow: #44d9e611 0px -1px 31px 15px;
+    border-radius: 10%;
+} 
+.circler {
+    opacity: 1;
+}
+.teethImage {   
+    color: transparent;
+    width: 75px;
+    height: auto;
+    background: linear-gradient(to right, #769bff, #769bff);
+    box-shadow: #769bff43 0px -1px 31px 15px;
+    padding: .9rem;
+    border-radius: 32%;
+    animation: bounceIn 2s infinite alternate;
+}
+@media (max-width: 1084px) {
+    .contactText {
+        max-width: 78%;
+    }
+    .circle3 {
+        display: none;
+    }
+    .circle2 {
+        top: -5rem;
+    }
+    .contactTitle {
+        font-size: 2.5rem;
+        z-index: 1111;
+        position: relative;
+    }
+    .contactText {
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 864px) {
+    .contactText {
+        max-width: 93%;
+    }
+}
+@media (max-width: 295px) {
+    .contactText {
+        font-size: 1.2rem;
+    }
+    .teethImage {
+        width: 58px;
+    }
+    .contactTitle {
+        font-size: 1.6rem;
+    }
+}
+// start contact
+.book {
+    max-width: 88%;
+    margin: 7rem auto 1rem auto;
+}
+.bookText {
+    font-size: 1.4rem;
+    max-width: 70%;
+    margin: 0 auto;
+    line-height: 1.5;
+    color: #65666e;
+}
+.bookspan {
+    position: relative;
+    background: #0032ff;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    font-family: "Fira Go SB";
+    font-feature-settings: "case" on;
+    color: #fff;
+}
+.bookRightTitle {
+    color: #031e71;
+    font-family: "Fira Go SB";
+    font-feature-settings: "case" on;
+    font-size: 4rem;
+    margin: 1.5rem 0 2rem 0;
+} 
+.bookRight {
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+}
+.bookRightChange {
+    background-color: #0032ff !important;
+    padding: 3rem;
+    border-radius: 30px;
+} 
+.bookRightFlex {
+    background-color: #0033ff19;
+}
+.bookRightFlex {
+    cursor: pointer;
+    padding: 3rem;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    transition: all .4s ease-in;
+}
+.bookRightFlex:hover {
+    transform: scale(.95);
+    background-color: #0529a0; 
+}  
+.bookSpanRight {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    margin-top: 5rem;
+    box-shadow: #031f7136 0px 54px 55px, #031f7136 0px -12px 30px, #031f7136 0px 4px 6px, #031f7136 0px 12px 13px, #031f7136 0px -3px 5px;
+    background: #031e71;
+    padding: 3rem;
+    border-radius: 50px;
+    gap: 2.5rem; 
+}
+.teethSvg {
+    background: #00ccb2;
+    box-shadow: #00ccb170 0px -1px 31px 15px;
+} 
+.bookRightFlexP {
+    font-size: 1.7rem;
+    font-family: "Fira Go";
+    color: #fff;
+    font-feature-settings: "case" on;
+} 
+.sameBookP {
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    color: #b6caff;
+}
+.sameBookP2 {
+    font-family: "Fira Go SB";
+}
+.bookSpan {
+    background: #264e86;
+    display: inline-block;
+    color: #fff;    
+    padding: 1rem 1.5rem;
+    border-radius: 30px 0;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}    
+.bookTop {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    margin-top: 6rem;
+    grid-gap: 4rem;
+}
+.bookLeftFlex {
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 1400px) {
+    .bookSpanRight {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+@media (max-width: 1084px){
+    .bookRightTitle {
+        font-size: 3rem;
+    }
+}
+@media (max-width: 992px){
+    .bookSpanRight {
+        grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+        padding: 3rem 2rem;
+    }
+    .bookRightFlexP {
+        font-size: 1.4rem;
+    }
+    .bookText {
+        max-width: 95%;
+    }
+    .bookRightFlex {
+        padding: 3rem 0.5rem;
+    }
+}
+@media (max-width: 768px){
+    .bookspan {
+        padding: 0.7rem 1.5rem;
+        border-radius: 50px;
+        font-size: 1.2rem;
+    }
+    .bookRightTitle {
+        font-size: 2rem;
+    }
+    .bookText {
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 295px) {
+    .bookRightTitle {
+        font-size: 1.4rem;
+    }
+    .bookSpanRight {
+        grid-template-columns: repeat(auto-fit, minmax(171px, 1fr));
+    }
+    .bookRightFlexP {
+        font-size: 1.1rem;
+    }
+    .bookTop {
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    }
+}
+//  BookLeft
+.bookLeft {  
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+    padding: 1.6rem 4rem; 
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: #0032ff; 
+    max-width: 55%;
+    margin: 1rem auto 3rem auto;
+    gap: 2.5rem;
+     
+}  
+.bookLeftFlexRight {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.bookSvg {
+    background: #496eff;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .3s ease-in;
+    animation: bounceSvg 1s infinite alternate;
+}
+@keyframes bounceSvg {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(.96);
+    }
+}
+.bookSvg:hover {
+    background: #829bff;
+    transform: translateY(-10px);
+}
+.bookLeftTitle {
+    font-family: "Fira Go SB";
+    font-size: 2rem;
+    font-feature-settings: "case" on;
+    color: #fff;
+}
+.bookLeftTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.circle {
+    position: absolute;
+    right: -2rem;
+    top: -4rem;
+    background: linear-gradient(45deg, #00ccb2, transparent);
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+    box-shadow: #44d9e611 0px -1px 31px 15px;
+}
+@media (max-width: 295px) {
+    .bookLeftFlexRight {
+        flex-direction: column;
+    }
+    .bookLeftTitle {
+        font-size: 1.8rem;
+    }
+}
+.inputer {
+    padding: 1rem;
+    font-size: 1.4rem;
+    border-radius: 50px;
+    border: none; 
+    font-feature-settings: "case" on; 
+    font-size: 1.2rem;
+    padding: 2rem 4rem;
+    border: 3px solid #87a7ff;
+    outline: none;
+    color: #fff;
+    background-color: #4778ff;
+} 
+.inputer:hover {
+    background-color: #668fff;
+}
+.inputNumber {
+    margin-left: .8rem;
+} 
+.bookFlexInputBottom {
+    margin-top: 1rem;
+} 
+.bookFlexInput {
+    display: flex;
+    gap: .8rem;
+} 
+.bookTitle {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; 
+    font-size: 4rem;
+    font-feature-settings: "case" on; 
+    color: #fff;
+    font-family: "Fira Go SB";
+}
+.doctorIlu {
+    position: absolute;
+    right: 10rem;
+    bottom: -5rem;
+}
+.bookLeftFlex {
+    display: block;
+}
+.contactBtnShow { 
+    background: #00ccb2;
+    color: #fff;
+    padding: 2rem 7.4rem;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    border: none;
+    font-feature-settings: "case" on; 
+    font-family: "Fira Go SB"; 
+    margin-left: 1.5rem;
+    transition: all .25s ease-in;
+    text-align: center; 
+    justify-content: center;
+}
+.contactBtnShow:hover {
+    box-shadow: #00ccb176 0px 30px 60px -12px, #00ccb176 0px 18px 36px -18px;
+    opacity: .9; 
+}
+ 
+@media (max-width: 1595px) {
+    .book, .bookLeft {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .bookLeft {
+        margin-top: 1rem;
+    }
+    .inputer {
+        padding: 2rem 3rem;
+    }
+    .contactBtnShow {
+        padding: 2rem 7rem; 
+        margin-left: 1.4rem;
+        font-size: 1.2rem;
+    }
+} 
+@media (max-width: 1300px) {
+    .inputer {
+        padding: 2rem;
+        font-size: 1.1rem;
+    }
+    .contactBtnShow {
+        padding: 2rem 5.5rem;
+        font-size: 1.1rem;
+        margin-left: 1.4rem;
+    }
+}
+@media (max-width: 1170px) {
+     .doctorIlu {
+        right: 1rem;
+     }
+}
+@media (max-width: 1130px) {
+     .doctorIlu {
+        width: 22%;
+     }
+     .contactBtnShow {
+        padding: 2rem 5.5rem;
+
+     }
+}
+@media (max-width: 1020px) {
+    .bookLeftTop 
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+     .doctorIlu {
+        display: none;
+     }
+     .bookFlexInput {
+        display: flex;
+        flex-direction: column;
+     }
+     .inputNumber {
+        margin-left: 0rem !important;
+     }
+     .bookFlexInputBottom {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+     }
+     .contactBtnShow {
+        padding: 2rem;
+        margin-left: 0 !important;
+     }
+}
+@media (max-width: 992px) {
+    .teethClient {
+        width: 12%;
+    }
+    .bookLeft {
+        padding: 5rem 1rem;
+    }
+    .bookTitle {
+        font-size: 2.5rem;
+        z-index: 1111;
+    }
+}
+@media (max-width: 768px) {
+    .teethClient {
+        width: 16%;
+    } 
+}
+@media (max-width: 295px) {
+    .bookTitle {
+        font-size: 1.8rem;
+    }
+    .inputer {
+        font-size: 1rem;
+    }
+}
+// start doctor Contact 
+.faq {
+    margin-top: 12rem;
+    position: relative;  
+}
+.circleParent {
+    overflow: hidden;
+}
+.circle {
+    opacity: 1;
+}
+.circle4 {
+    position: absolute;
+    left: 8rem;
+    top: 19rem;
+    background: linear-gradient(45deg, #00ccb2, transparent);
+    width: 3rem; 
+    height: 3rem;
+    border-radius: 10%;
+}
+.circle5 {
+    position: absolute;
+    left: 6rem;
+    top: 22rem;
+    background: linear-gradient(45deg, #00ccb2, transparent);
+    width: 3rem; 
+    height: 3rem;
+    border-radius: 10%;
+}
+.circle6 {
+    position: absolute;
+    right: 6rem;
+    top: -4rem;
+    background: linear-gradient(45deg, #00ccb2, transparent);
+    width: 3rem; 
+    height: 3rem;
+    border-radius: 10%;
+}
+.circle7 {
+    position: absolute;
+    right: 6rem;
+    top: 0rem;
+    background: linear-gradient(45deg, #00ccb2, transparent);
+    width: 3rem; 
+    height: 3rem;
+    border-radius: 10%;
+}
+.circle8 {
+    position: absolute;
+    right: 2rem;
+    top: 0rem;
+    background: linear-gradient(45deg, #00ccb2, transparent);
+    width: 3rem; 
+    height: 3rem;
+    border-radius: 10%;
+}
+.faqTop { 
+    background: #0032ff;
+    padding: 6rem 0;  
+    text-align: center;
+} 
+.faqTopFlex {
+    max-width: 70%;
+    margin: 0 auto;
+    transition: all .3s ease-in;
+}
+.faqTopTitle {
+    color: #fff;
+    font-size: 3.5rem;
+    font-feature-settings: "case" on;
+    font-family: "FiraGo B";
+    margin-bottom: 1.5rem;
+} 
+.dropFaqActive {   
+    border-radius: 20px;
+    background-color: #fff;
+    transition: all .3s ease-in;
+} 
+.faqTopText 
+{   
+    font-size: 1.7rem;
+    color: #ffffffa8;
+    line-height: 1.7;
+}
+.faqTopBtn {
+    background: #00ccb2;
+    border: none;
+    padding: 1.8rem 3rem;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    margin: 3rem 0 0 0;
+    transition: all .3s ease-in;
+    font-feature-settings: "case" on;
+}
+.faqTopBtn:hover {
+    background-color: #fff;
+    color: #00ccb2;
+    transform: translateY(10px);
+}
+@media (max-width: 992px) {
+    .circle4, .circle5, .circle6, .circle7, .circle8 {
+        display: none;
+    }
+    .faqTopFlex {
+        max-width: 91%;
+    }
+    .faqTopTitle {
+        font-size: 2rem;
+    }
+    .faqTopText {
+        font-size: 1.4rem;
+    }
+    .faqTopBtn {
+        padding: 1rem 2rem;
+        color: #fff;
+        font-size: 1.3rem;
+    }
+
+}
+// followStart 

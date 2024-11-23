@@ -1,0 +1,20 @@
+.scrollBtnActive {
+    display: block;
+    background-color: #0032ff; 
+    position: fixed;
+    bottom: 6.3rem;
+    right: 1.6rem;
+    padding: 1.2rem 1rem;
+    z-index: 111;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all .3s ease-in;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.scrollBtnActive:hover {
+    transform: scale(1.05);
+    border-radius: 20px;
+}
+.scrollBtn {
+    display: none;
+}

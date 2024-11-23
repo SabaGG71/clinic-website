@@ -1,0 +1,467 @@
+$primary: #0032ff;
+$secondary: #ff9900;
+$light: #fff;
+$dark: #000;
+$sec-dark: #545454;
+@font-face {
+    font-family: "FiraGo B";
+    src: url("../../../fonts/FiraGO-Bold.ttf");
+}
+.textUpper {
+    font-feature-settings: "case" on;
+}
+.serviceInfo {
+    margin-top: 15rem;
+    background: #0032ff0d;
+    padding: 9rem 0 17rem 0;
+    position: relative; 
+}
+.operation {
+    position: absolute;
+    top: -11rem;
+    width: 16rem;
+    height: auto;
+    right: -12rem;
+    padding: 1rem; 
+}
+.mouth {
+    position: absolute;
+    top: -10rem;
+    width: 17rem;
+    height: auto;
+    right: -9rem;
+    padding: 1rem;  
+}
+.teethBlush {
+    position: absolute;
+    top: -14rem;
+    width: 20rem;
+    height: auto;
+    right: -16rem;
+    padding: 1rem;  
+}
+.toothFilling {
+    position: absolute;
+    top: -10rem;
+    width: 16rem;
+    height: auto;
+    right: -10rem;
+    padding: 1rem;  
+}
+.serviceInfoTop {
+    max-width: 88%;
+    margin: 0rem auto 0 auto;
+    position: relative;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+.serviceTopBox {
+    max-width: 88%;
+    margin: 0 auto;
+}
+.serviceInfoTitle {
+    font-family: "FiraGo B";
+    font-size: 4rem;
+}
+.serviceInfoText {
+    color: $sec-dark;
+    font-family: "FiraGo B";
+    font-size: 1.4rem;
+    margin-bottom: .6rem;
+}
+.serviceInfoBtn {
+    background: $primary;
+    padding: 1.3rem 1.9rem;
+    border-radius: 50px;
+    font-family: "FiraGo B";
+    color: $light;
+    font-size: 1.4rem;
+    animation: scaling 2s cubic-bezier(0.12, 0.7, 0.74, 0.71) infinite;
+} 
+@keyframes scaling {
+    0% { 
+      background-color: $primary;
+    }
+    100% {
+      transform: scale(10);
+      background-color: $primary;
+    }
+  }
+@media (max-width: 1200px) {
+    .serviceInfoTitle {
+        font-family: "FiraGo B";
+        font-size: 3rem;
+    }
+    .serviceInfoText { 
+        font-size: 1.1rem; 
+    }
+    .serviceInfoBtn { 
+        padding: 1.1rem 1.6rem; 
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 992px) { 
+    .serviceInfoTitle {
+        font-family: "FiraGo B";
+        font-size: 3rem;
+    }
+    .serviceInfoText { 
+        font-size: 1.1rem; 
+    }
+    .serviceInfoBtn { 
+        padding: 1.1rem 1.6rem; 
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 870px) {
+     
+    .serviceInfoTop {
+        flex-direction: column;
+        text-align: center;
+    }
+    .serviceInfoText {
+        font-size: 1.2rem;
+    }
+    .serviceInfoBtn {
+        padding: 1.1rem 1.4rem;
+       font-size: 1.3rem;
+    }
+    .serviceInfoTitle {
+        margin-bottom: 2rem;
+        font-size: 3rem;
+    }
+    .serviceInfoTitle {
+        margin-bottom: 3rem;
+    }
+}
+@media (max-width: 750px) {
+    
+    .serviceInfoText {
+        font-size: .9rem;
+    }
+    .serviceInfoBtn {
+        padding: 0.8rem 1.4rem;
+      font-size: 1rem;
+    }
+    .serviceInfoTitle {
+        margin-bottom: 2rem;
+        font-size: 2.2rem;
+    }
+    .serviceInfoTitle {
+        margin-bottom: 3rem;
+    }
+}
+.serviceTopBox {
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(515px, 1fr));
+    align-items: center;
+    grid-gap: 1rem;
+} 
+.serviceBox { 
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 3rem 7rem 6rem 2rem;
+    border-radius: 16px;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.serviceBoxFirst, .serviceBoxFourth {
+    background-color: $primary;
+    color: $light;
+}
+.serviceBoxSecond, .serviceBoxThird {
+    background-color: #0e153a;
+    color: $light;
+}
+.sliderImg { 
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #3d64ff;
+    padding: 1rem;
+    width: 8rem;
+    height: 5rem;
+    border-radius: 16px 0;
+}
+.serviceBox:hover {
+    opacity: .9;
+    transform: scale(0.98) !important;
+}
+.serviceFlexTitle {
+    font-feature-settings: "case" on;
+    font-size: 2.5rem;
+    margin: 1rem 0 1.4rem 0; 
+    font-family: "FiraGo B";
+}
+.serviceFlexText {
+    line-height: 1.5;
+    font-size: 1.4rem;
+}
+.toothImage { 
+    width: 15%;
+    height: auto;
+    background: #e1e1e1;
+    padding: 1rem;
+    border-radius: 30px;
+    margin-bottom: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.495) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.circle {
+    border: 6px solid #ffffff78; 
+    position: absolute;
+    top: -5rem;
+    right: -2rem;
+    border-radius: 50%;
+    width: 13rem;
+    height: 13rem;
+}
+.square {
+    border: 6px solid #ffffff78; 
+    position: absolute;
+    top: -2rem;
+    right: -2rem;
+    border-radius: 9px;
+    width: 13rem;
+    height: 13rem; 
+}
+.square2 {
+    border: 6px solid #ffffff78; 
+    position: absolute;
+    top: -2rem;
+    right: -2rem;
+    border-radius: 9px;
+    width: 13rem;
+    height: 13rem; 
+}
+.triangle {
+    border: 6px solid #ffffff78; 
+    position: absolute;
+    top: -5rem;
+    right: -4rem;
+    border-radius: 50%;
+    width: 13rem;
+    height: 13rem;
+}
+.object {
+    opacity: 1;
+}
+.allImageMove {
+    opacity: .4;
+}
+@media (max-width: 1330px) {
+    .serviceTopBox {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+    .serviceFlexTitle {
+        font-size: 2rem;
+    }
+    .serviceFlexText {
+        font-size: 1.2rem;
+    }
+    .toothImage {
+        width: 21%;
+    }
+    .allImageMove {
+        top: -7rem;
+        width: 9rem;
+        height: auto;
+        right: -4rem;
+    }
+} 
+@media (max-width: 1100px) {
+    .operation {
+        right: -6rem;
+    }
+}
+@media (max-width: 992px) {
+    .toothImage {
+        width: 25%;
+    }
+    .allImageMove {
+      display: none;   
+    }
+}
+@media (max-width: 780px) {
+    .toothImage {
+        width: 25%;
+    }
+    .allImageMove {
+      display: none;   
+    }
+}
+@media (max-width: 678px) {
+    .toothImage {
+        width: 36%;
+    }
+    .serviceTopBox {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+@media (max-width: 430px) {
+    .serviceBox {
+        padding: 4rem 2rem 6rem 2rem;
+    }
+    .serviceFlexText {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+}
+@media (max-height: 376px) {
+    .toothImage {
+        width: 25%;
+    } 
+}
+@media (max-width: 295px) {
+    .serviceBox {
+        padding: 4rem 2rem 6rem 2rem;
+    }
+    .serviceTopBox {
+        grid-template-columns: repeat(auto-fit, minmax(237px, 1fr));
+    }
+    .serviceFlexTitle {
+        font-size: 1.5rem;
+    }
+    .serviceFlexText {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+    .toothImage {
+        width: 35%;
+    }
+}
+// service-box
+// .serviceTopBox {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr)); 
+//     grid-gap: 1.5rem;
+//     margin-top: 4rem;
+// }
+// .serviceBox { 
+//     position: relative;
+//     background: url("../../../../public/teeth.jpg");
+//     width: 100%;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     padding: 14rem 2rem;
+//     border-radius: 1rem;
+// }
+// .serviceBox {
+//     position: relative;
+//     width: 100%;
+//     height: 57vh;
+//     background-position: bottom;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     box-shadow: #5454542a 0px 0px 0px 5px;
+//     padding: 17rem 2rem 2rem 2rem;
+//     background-attachment: fixed;
+//     border-radius: 1rem;
+//     transition: all .1s ease-in;
+//     cursor: pointer;
+// }
+// .serviceFlexLeft {
+//     margin-top: 4rem;
+// }
+// .serviceBoxFirst { 
+//     background-position: bottom !important;
+//     background: linear-gradient(#282828a8, rgba(0, 0, 0, 0.768627451)), url('../../../../public/teeth.jpg');
+// }
+// .serviceBoxSecond {
+//     background-position: bottom !important;
+//     background: linear-gradient(#282828a8, rgba(12, 10, 10, 0.769)), url('../../../../public/teethLine.jpg');
+// }
+// .serviceBoxThird {
+//     background-position: bottom !important;
+//     background: linear-gradient(#282828a8, rgba(0, 0, 0, 0.768627451)), url('../../../../public/techTeeth.jpg');
+// }
+// .serviceBoxFourth {
+//     background-position: bottom !important;
+//     background: linear-gradient(#282828a8, rgba(0, 0, 0, 0.768627451)), url('../../../../public/teethClinic.jpg');
+// }
+// .serviceBox:hover { 
+//     transform: scale(.95);
+//     box-shadow: #0033ff8f 0px 0px 2px 7px;
+// }
+// .serviceFlexLeft {
+//     background: #d7d7d70a;
+//     padding: 1rem;
+//     border-radius: 24px;
+// }
+// .serviceFlexTitle {
+//     font-size: 2.5rem;
+//     color: $light;
+//     font-family: "FiraGo B";
+// }
+// .serviceFlexText {
+//     color: #ffffffcc;
+//     font-size: 1.5rem;
+//     margin: 1rem 0 2rem 0;
+// }
+// @media (max-width: 1680px) {
+//     .serviceBox { 
+//         background-position: -17rem -28rem;
+//     }
+//     .serviceFlexLeft {
+//         margin-top: -2rem;
+//     }
+//     .serviceFlexTitle {
+//         font-size: 3.5rem;
+//     }
+//     .serviceFlexText {
+//         font-size: 1.4rem;
+//         line-height: 1.4;
+//     }
+// }
+// @media (max-width: 1266.33px) {
+//     .serviceTopBox {
+//         grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+//     }
+//     .serviceBox {
+//         background-size: cover;  
+//     }
+//     .serviceFlexTitle {
+//         font-size: 3.5rem;
+//     }
+//     .serviceFlexText {
+//         font-size: 1.4rem;
+//         line-height: 1.4;
+//     }
+// }
+// @media (max-width: 1350px) { 
+//     .serviceFlexLeft {
+//         margin-top: -2rem;
+//     }
+//     .serviceFlexTitle {
+//         font-size: 2.5rem;
+//     }
+//     .serviceFlexText {
+//         font-size: 1.2rem;
+//     }
+// }
+// @media (max-width: 1250px) { 
+//     .serviceFlexLeft {
+//         margin-top: -3rem;
+//     } 
+// }
+// @media (max-width: 992px) { 
+//      .serviceTopBox {
+//         grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+//      }
+// }
+// @media (max-width: 870px) { 
+//      .serviceFlexLeft {
+//         margin-top: -11rem;
+//      }
+//      .serviceFlexTitle {
+//         font-size: 2rem;
+//      }
+// }
+// @media (max-width: 376px) { 
+//      .serviceFlexLeft {
+//         margin-top: -11rem;
+//      } 
+// }
